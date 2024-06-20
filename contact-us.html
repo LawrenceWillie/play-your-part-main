@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" >
+    <link rel="stylesheet" href="fontAwesome/css/all.css" />
+    <title>pypproprojects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+  
+  <div class="circle"></div> 
+  <section>
+    <header>
+     <a href="index.html" class="logo" style="text-decoration: none;"><img src="images/logoto.png" alt="logo-image" class="logo-image"><span>GREEN <span style="color: rgb(18, 167, 167);">TECH</span></span></a>
+        <label id="menu-bar"  onclick="openNav()"><i class="fas fa-bars"></i></label>
+        <div id="mySidenav" class="sidenav">
+          <a  class="closebtn" onclick="closeNav()"><span>&times;close<span></a> 
+          <ul>
+              <li id="" class="active"><a href="index.html">Home</a></li>
+              <li id="about.php" ><a href="">About</a></li>
+              <li><a href="contact-us.html">Contact us</a></li>
+              <li><a class="apply" href="application.html">Apply now</a></li>
+          </ul>
+        </div>
+    </header>  
+    <div id="header-text" class="row" >
+                <div id="textBox" class="col-lg-12 col-md-12">
+                  <div class="text-container">
+                    <div class="slideshow-container">
+                      <div class="mySlides">
+                        <h2>Green Projects.<br> <p style="color:rgb(255, 230, 9) ; font-size: 20px;">Play Your Part</p></h2>
+                        
+                      </div>
+
+                          <div class="dots" >
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                          </div> 
+                      </div>
+
+                        <div class="apply-cont"><a class="apply" href="application.html">Apply now</a></div>
+
+                        <div class="call-us">
+                          <a class="call" href="tel:078 352 1065"><p><i id="phone" class="fas fa-phone"></i> </p></a>
+                          <a class="whatsapp" onclick="social_media()" href="https://call.whatsapp.com/voice/lKjkCJokuOwJ1VkfAs1d20"><p><i id="whatsapp" class="fa-brands fa-whatsapp"></i> </p></a>
+                          <a class="facebook" onclick="social_media()" href="" style="text-decoration: none;"><p><i id="facebook" class="fa-brands fa-facebook"></i> </p></a>
+                          <a class="twitter" onclick="social_media()" href="" style="text-decoration: none;"><p><i id="facebook" class="fa-brands fa-twitter"></i> </p></a>
+                        </div>
+                    </div>
+                </div>        
+        </div>
+  </section>
+
+    <div class="container">
+	    <div id="home-tiles" class="row">
+
+			<h2>contact us</h2>
+		<div class="layer3">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<div class="form-container">
+				<form method="post" action="#">
+				<!-- <?php include('errors.php'); ?> -->
+				<div class="input-cnt">
+				<i id="name" class="fas fa-user"></i>
+				<input type="text" placeholder="name"  name="name" >
+				</div>
+
+
+					<div class="input-cnt">
+						<i id="name" class="fas fa-envelope"></i>
+						<input type="text" placeholder="email" name="email" >
+						</div>
+
+				<div class="input-cnt">
+					<i id="name" class="fas fa-message"></i>
+					<textarea placeholder="your message here..." name="message"></textarea>
+					</div>
+				<div  class="input-cnt">
+					<input id="updates" onclick="update()" type="submit" />
+				</div>
+				
+				</form>
+				</div>
+
+				</div>
+
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					<div class="description">
+					<div class="pic1"><img src="images/contact us hrere.jpg" alt="solar-panel" class="solar-panel">
+					
+					</div>
+					
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<a id="map" href="https://goo.gl/maps/9zY8G8BZbjDxhcFv5" target="_blank">
+					  <div id="map-tile">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.2187497375472!2d28.396702134802787!3d-26.298152009167442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9527c4708f653b%3A0xd06771e33480b9fe!2sNederlands%20Gereformeerde%20Kerk!5e0!3m2!1sen!2sza!4v1686639728329!5m2!1sen!2sza" width="100%" height="450" style="border:1px solid skyblue; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					  </div>
+					</a>
+				  </div>
+        </div>
+    </div>
+
+	<!-- FOOOTER -->
+	<footer class="panel-footer">
+		<div class="container">
+		  <div class="row">
+			<section id="hours" class="col-sm-4">
+			  <span>Hours:</span><br>
+			  Mon-fri: 10:00 - 13:00<br>
+			  On appointments<br>
+			  Only
+			  <hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+			  <span>Address:</span><br>
+			  Gereformeerde Kerk <br>
+			  23 Ramothibe.<br>
+			  
+			  <p>* The map above is a pin pointed location of our office.</p>
+			  <hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+			  <p style="font-weight: 600; font-size: large;"><i id="phone" class=""></i> CONTACTS</p>
+			  <p><i id="email" class="fas fa-envelope"></i> lawrencemokoko@gmail.com</p>
+			  <p><i id="email" class="fas fa-envelope"></i> lawrencewillie448@gmail.com</p>
+			  <p><i id="phone" class="fas fa-phone"></i> 079 336 5832</p>
+			  </section>
+			  
+		  </div>
+		  <div class="text-center">&copy;<a href="index.html" style="text-decoration: none; color: antiquewhite;" >GEERN TECH pty Ltd 2024</a></div>
+		</div>
+	  </footer>
+	  <script src="js/update.js"></script>
+	  <script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
+	  <script src="popper/popper.min.js" type="text/javascript"></script>
+	  <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	  <script src="js/bootstrap.bundle.js" ></script> 
+	  <script src="js/landingPageImageSlider.js"></script>
+
+
+</body>
+</html>
